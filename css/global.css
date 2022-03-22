@@ -1,0 +1,33 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+a{
+    text-decoration: none;
+}
+
+main{
+    display: flex;
+    height: calc(100vh - 100px);
+}
+
+.main-nav{
+    height: 100%;
+    width: 200px;
+}
+
+ul{
+    list-style: none;
+}
+
+h2{
+    color: white;
+    font-weight: 700;
+}
+
+h3{
+    color: white;
+    font-weight: 700;
+}
