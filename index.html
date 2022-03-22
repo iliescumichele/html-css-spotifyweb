@@ -5,8 +5,9 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/global.css">
-    <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="css/utils.css">
+    <link rel="stylesheet" href="css/style-main-dx.css">
+    <link rel="stylesheet" href="css/style-nav-sx.css">
+    <link rel="stylesheet" href="css/style-footer.css">
     <!-- Font -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -31,17 +32,20 @@
 
             <div class="main-menu">
                 <div class="main-menu-btn">
-                    <a href="">
+                    <a href="#">
+                        <img src="img/home.svg" alt="">
                         <span>Home</span>
                     </a>
                 </div>
                 <div class="main-menu-btn">
                     <a href="">
+                        <img src="img/search.svg" alt="">
                         <span>Cerca</span>
                     </a>
                 </div>
                 <div class="main-menu-btn">
                     <a href="">
+                        <img src="img/libreria.svg" alt="">
                         <span>La tua libreria</span>
                     </a>
                 </div>
@@ -69,99 +73,120 @@
 
             
             <!-- recently played -->
-            <div class="flex recently-played">
+            <section id="recently-played">
                 <h2>Recently played</h2>
-                <div class=" album">
-                    <div class="cover">
-                        <img src="img/metal_lifting.jpg" alt="">
+                <div class="flex">
+                    <div class="album">
+                        <div class="cover">
+                            <img src="img/metal_lifting.jpg" alt="">
+                        </div>
+                        <div class="album-txt">
+                            <a href="#"><h3>Heavy Metal</h3></a>
+                            <a href="">Subtitle</a>
+                        </div>
                     </div>
-                    <div class="album-txt">
-                        <h3>Heavy Metal</h3>
-                        <p>Subtitle</p>
+
+                    <div class=" album">
+                        <div class="cover">
+                            <img src="img/stranger.jpeg" alt="">
+                        </div>
+                        <div class="album-txt">
+                            <a href="#"><h3>Stranger Things, Vol.1 (a Netflix Original Series Soundtrack)</h3></a>
+                            <a href="">Kyle Dixon & Michael Stein</a>
+                        </div>
+                    </div>
+
+                    <div class=" album">
+                        <div class="cover">
+                            <img src="img/aquietplace.jpeg" alt="">
+                        </div>
+                        <div class="album-txt">
+                            <a href="#"><h3>A quiet place</h3></a>
+                            <a href="">Subtitle</a>
+                        </div>
+                    </div>
+
+                    <div class=" album">
+                        <div class="cover">
+                            <img src="img/split.jpeg" alt="">
+                        </div>
+                        <div class="album-txt">
+                            <a href="#"><h3>Split</h3></a>
+                            <a href="">Subtitle</a>
+                        </div>
+                    </div>
+
+                    <div class=" album">
+                        <div class="cover">
+                            <img src="img/cure.jpeg" alt="">
+                        </div>
+                        <div class="album-txt">
+                            <a href="#"><h3>A cure for wellness</h3></a>
+                            <a href="">Subtitle</a>
+                        </div>
+                    </div>
+
+                    <div class=" album">
+                        <div class="cover">
+                            <img src="img/sinister.jpeg" alt="">
+                        </div>
+                        <div class="album-txt">
+                            <a href="#"><h3>Sinister</h3></a>
+                            <a href="">Subtitle</a>
+                        </div>
                     </div>
                 </div>
-                <div class="flex album">
-                    <div class="cover">
-                        <img src="img/metal_lifting.jpg" alt="">
-                    </div>
-                    <div class="album-txt">
-                        <h3>Heavy Metal</h3>
-                        <p>Subtitle</p>
-                    </div>
-                </div>
-                <div class="flex album">
-                    <div class="cover">
-                        <img src="img/metal_lifting.jpg" alt="">
-                    </div>
-                    <div class="album-txt">
-                        <h3>Heavy Metal</h3>
-                        <p>Subtitle</p>
-                    </div>
-                </div>
-                <div class="flex album">
-                    <div class="cover">
-                        <img src="img/metal_lifting.jpg" alt="">
-                    </div>
-                    <div class="album-txt">
-                        <h3>Heavy Metal</h3>
-                        <p>Subtitle</p>
-                    </div>
-                </div>
-                <div class="flex album">
-                    <div class="cover">
-                        <img src="img/metal_lifting.jpg" alt="">
-                    </div>
-                    <div class="album-txt">
-                        <h3>Heavy Metal</h3>
-                        <p>Subtitle</p>
-                    </div>
-                </div>
-            </div>
+            </section>
             <!-- /recently played -->
 
             <!-- custom playlist -->
-            <div class="flex custom-playlist">
-                <h2>Creato per John Doe</h2>
-                <div class="flex album">
-                    <div class="cover">
-                        <img src="img/radar.jpeg" alt="">
+            <section id="custom-playlist">
+                <h2>Recently played</h2>
+                <div class="flex">
+                    <div class="album">
+                        <div class="cover">
+                            <img src="img/radar.jpeg" alt="">
+                        </div>
+                        <div class="album-txt">
+                            <a href="#"><h3>Release Radar</h3></a>
+                        </div>
                     </div>
-                    <div class="album-txt">
-                        <h3>Release Radar</h3>
+
+                    <div class=" album">
+                        <div class="cover">
+                            <img src="img/mixdaily.jpeg" alt="">
+                        </div>
+                        <div class="album-txt">
+                            <a href="#"><h3>Daily Mix 1</h3></a>
+                        </div>
                     </div>
                 </div>
-                <div class="flex album">
-                    <div class="cover">
-                        <img src="img/mixdaily.jpeg" alt="">
-                    </div>
-                    <div class="album-txt">
-                        <h3>Daily Mix 1</h3>
-                    </div>
-                </div>
-            </div>
+            </section>
             <!-- /custom playlist -->
 
             <!-- artisti più popolari -->
-            <div class="flex artisti-popolari">
-                <h2>Artisti pi&uacute; popolari</h2>
-                <p>Pi&uacute; ascolti, pi&uacute; accurati saranno i suggerimenti.</p>
-                <div class="flex album">
-                    <div class="cover">
-                        <img src="img/einaudi.jpeg" alt="">
+            <section id="artisti-popolari">
+                <h2>Artisti popolari</h2>
+                <p>Pi&uacute; ascolti, pi&uacute; accurati saranno i suggerimenti</p>
+                <div class="flex">
+                    <div class="album">
+                        <div class="cover">
+                            <img src="img/youg.jpeg" alt="">
+                        </div>
+                        <div class="album-txt">
+                            <h3>Lana del Ray</h3>
+                        </div>
                     </div>
-                    <div class="album-txt">
-                        <h3>Release Radar</h3>
+
+                    <div class=" album">
+                        <div class="cover">
+                            <img src="img/einaudi.jpeg" alt="">
+                        </div>
+                        <div class="album-txt">
+                            <h3>Ludovico Einaudi</h3>
                     </div>
                 </div>
-                <div class="flex album">
-                    <div class="cover">
-                        <img src="img/mixdaily.jpeg" alt="">
-                    </div>
-                    <div class="album-txt">
-                        <h3>Daily Mix 1</h3>
-                    </div>
-                </div>
-            </div>
+            </section>
             <!-- /artisti più popolari -->
 
 

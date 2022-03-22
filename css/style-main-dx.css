@@ -7,6 +7,7 @@
     right: 0;
     background-color: rgba(0, 0, 0, .5);
     text-align: right;
+    z-index: 999;
 }
 
 .upgrade a{
@@ -15,9 +16,10 @@
     color: white;
     padding: 7.5px 30px;
     border-radius: 25px;
-    margin: 20px 3px;
+    margin: 10px 3px;
+    display: inline-block;
 }
-/* /Button on top for buying/upgrade to pro version*/
+/* -----/Button on top for buying/upgrade to pro version----- */
 
 
 
@@ -40,23 +42,31 @@
     color: #7e8084;
     font-weight: 600;
 }
-/* /Nav top*/
+/* -----/Nav top-----*/
 
 
-.recently-played, 
- .custom-playlist, 
- .artisti-popolari{
+/* Section album, text-album */
+#recently-played, 
+ #custom-playlist, 
+  #artisti-popolari{
+    margin-bottom: 20px;
+    margin-left: 10px;
+}
+
+#recently-played .flex, 
+ #custom-playlist .flex, 
+  #artisti-popolari .flex{
     flex-wrap: wrap;
 }
 
 .album{
-    flex-direction: column;
-    position: relative;
+    width: 200px;
     margin: 10px;
 }
 
 .album .cover{
     height: 200px;
+
 }
 
 .album .cover img{
@@ -67,22 +77,21 @@
     text-align: center;
 }
 
+.album-txt a:last-child{
+    font-size: 12px;
+    color: #a3a3a3;
+}
+
+.album-txt a, .album-txt h3{
+    padding: 5px 0 5px;
+}
+
+#artisti-popolari .album .cover img{
+    border-radius: 50%;
+}
+/* -----/Section album, text-album----- */
+
+
+
 /* /Main content (right side) */
 
-
-
-
-
-
-
-
-
-.col-dx{
-    height: 100%;
-    width: calc(100% - 200px);
-    display: flex;
-    flex-direction: column;
-    overflow: auto;
-    color: #a3a3a3;
-    background-color: #141922;
-}
