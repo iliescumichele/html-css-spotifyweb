@@ -1,0 +1,36 @@
+#player a{
+    color: #838383;
+}
+
+#player .player-album, #player .player-audio{
+    height: 50px;
+}
+
+#player .player-album .img-player-album img{
+    height: 100%;
+    width: 50px;
+}
+
+.player-controller .player-controller-icons i{
+    color: white;
+    transform: scale(1.5);
+    margin: 0 15px 0 15px;
+}
+
+.player-controller{
+    flex-direction: column;
+}
+
+.player-controller .player-controller-icons .fa-circle-play{
+    transform: scale(2.1);
+}
+
+.player-controller .player-controller-time{
+    color: white;
+    justify-content: center;
+    flex-direction: row;
+}
+
+.player-audio-icons, .player-album-icons{
+    color: white;
+}

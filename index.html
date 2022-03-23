@@ -13,6 +13,12 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500&display=swap" rel="stylesheet">
     <!-- /Font -->
+
+    <!-- Icons -->
+    <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.css' integrity='sha512-E+53kXnJyuZFSz75xSmTfCpUNj3gp9Bd80TeQQMTPJTVWDRHPOpEYczGwWtsZXvaiz27cqvhdH8U+g/NMYua3A==' crossorigin='anonymous'/>
+    <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.css' integrity='sha512-1hsteeq9xTM5CX6NsXiJu3Y/g+tj+IIwtZMtTisemEv3hx+S9ngaW4nryrNcPM4xGzINcKbwUJtojslX2KG+DQ==' crossorigin='anonymous'/>
+    <!-- /Icons -->
+
     <title>Spotify</title>
 </head>
 <body>
@@ -23,36 +29,75 @@
 
 
     <main class="">
-        <section class="main-nav">
-            <div class="logo flex">
-                <a href="#">
-                    <img src="img/logo.svg" alt="">
-                </a>
+        <!-- side menu right -->
+        <aside class="flex main-nav">
+            <div class="nav-top">
+                <div class="logo">
+                    <a href="#">
+                        <img src="img/logo.svg" alt="">
+                    </a>
+                </div>
+
+                <div class="main-menu">
+                    <div class="main-menu-btn">
+                        <a href="#home">
+                            <img src="img/home.svg" alt="">
+                            <span>Home</span>
+                        </a>
+                    </div>
+                    <div class="main-menu-btn">
+                        <a href="#search">
+                            <img src="img/search.svg" alt="">
+                            <span>Cerca</span>
+                        </a>
+                    </div>
+                    <div class="main-menu-btn">
+                        <a href="#libreria">
+                            <img src="img/libreria.svg" alt="">
+                            <span>La tua libreria</span>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="nav-playlist">
+                    <h3>playlist</h3>
+                    <div class="btn-add-playlist">
+                        <a href="#playlist">
+                            <i class="fa-solid fa-square-plus"></i>
+                            <span>Crea Playlist</span>
+                        </a>
+                    </div> 
+                    <ul>
+                        <li><a href="#">Nome Playlist</a></li>
+                        <li><a href="#">Nome Playlist</a></li>
+                        <li><a href="#">Nome Playlist</a></li>
+                        <li><a href="#">Nome Playlist</a></li>
+                        <li><a href="#">Nome Playlist</a></li>
+                        <li><a href="#">Nome Playlist</a></li>
+                    </ul>
+                </div>
             </div>
 
-            <div class="main-menu">
-                <div class="main-menu-btn">
-                    <a href="#home">
-                        <img src="img/home.svg" alt="">
-                        <span>Home</span>
-                    </a>
-                </div>
-                <div class="main-menu-btn">
-                    <a href="#search">
-                        <img src="img/search.svg" alt="">
-                        <span>Cerca</span>
-                    </a>
-                </div>
-                <div class="main-menu-btn">
-                    <a href="#libreria">
-                        <img src="img/libreria.svg" alt="">
-                        <span>La tua libreria</span>
-                    </a>
+            <div class="flex nav-bottom">
+                <div class="">
+                    <div class="download-app">
+                        <a href="#">
+                            <img src="img/download.svg" alt="">
+                            <span>Installa app</span>
+                        </a>
+                    </div>
+                    <hr>
+                    <div class="user-account">
+                        <a href="#">
+                            <img src="img/profile.svg" alt="">
+                            <span><h3>John Doe</h3></span>
+                        </a>
+                    </div>
                 </div>
             </div>
+        </aside>
+        <!-- /side menu right -->
 
-
-        </section>
 
 
         <section class="col-dx ">
@@ -196,8 +241,53 @@
 
 
 
-    <footer class="h100 dbg-color">
-        >>>>>>>>>>FOOOOOOOOOOOOOOOOOOOOOOOOOOOOOTER
+    <footer class="dbg-color">
+        <section id="player">
+            <div class="flex player-album">
+                <div class="img-player-album">
+                    <a href="#">
+                        <img src="img/sinister.jpeg" alt="">
+                    </a>
+                </div>
+                <div class="text-player-album">
+                    <a href="">
+                        <h4>Sinister</h4>
+                    </a>
+                    <a href="">
+                        <p>Brano Nome</p>
+                    </a>
+                </div>
+                <div class="player-album-icons">
+                    <i class="fa-regular fa-heart"></i>
+                    <i class="fa-regular fa-folder"></i>
+                </div>
+            </div>
+
+
+            <div class="flex player-controller">
+                <div class="player-controller-icons">
+                    <i class="fa-solid fa-shuffle"></i>
+                    <i class="fa-solid fa-backward-step"></i>
+                    <i class="fa-regular fa-circle-play"></i>
+                    <i class="fa-solid fa-forward-step"></i>
+                    <i class="fa-solid fa-arrow-rotate-right"></i>
+                </div>
+                <div class="flex player-controller-time">
+                    <p>0:25</p>
+                    <div>------------------------------</div>
+                    <p>4:35</p>
+                </div>
+            </div>
+
+
+            <div class="player-audio">
+                <div class="player-audio-icons">
+                    <i class="fa-solid fa-list"></i>
+                    <i class="fa-regular fa-display"></i>
+                    <i class="fa-solid fa-volume-high"></i>
+                </div>
+            </div>
+        </section>
     </footer>
 </body>
 </html>

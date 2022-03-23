@@ -29,6 +29,14 @@ main{
     width: 200px;
 }
 
+footer #player{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100px;
+    background-color: #282828;
+}
+
 ul{
     list-style: none;
 }
@@ -43,7 +51,10 @@ h3{
     font-weight: 700;
 }
 
-
+h4{
+    color: white;
+    font-weight: 700;
+}
 
 
 

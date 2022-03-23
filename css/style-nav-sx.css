@@ -1,11 +1,19 @@
 .main-nav{
     padding-left: 20px;
     background-color: #000000;
+    flex-direction: column;
+    justify-content: space-between;
 }
+
+.main-nav .logo img {
+    padding-top: 10px;
+    height: 50px;
+    margin-bottom: 20px;
+}
+
 
 .main-menu .main-menu-btn img{
     height: 1.5rem;
-    width: auto;
     vertical-align: middle;
 }
 
@@ -13,7 +21,8 @@
     margin-top: 10px;
 }
 
-.main-menu a{
+.main-nav a{
+    line-height: 1.5rem;
     font-weight: 600;
     font-size: 14px;
     color: #8b8b8b;
@@ -21,4 +30,50 @@
 
 .main-menu a[href^="#home"]{
     color: rgb(255, 255, 255);
+    border-left: 2px solid #b0ff30;
+}
+
+.nav-playlist{
+    overflow-y: auto;
+    margin-top: 25px;
+}
+
+.nav-playlist h3{
+    text-transform: uppercase;
+}
+
+.nav-playlist .btn-add-playlist i{
+    vertical-align: middle;
+    font-size: 2rem;
+}
+
+.nav-playlist .btn-add-playlist a{
+    font-size: 16px;
+    vertical-align: middle;
+}
+
+.nav-playlist ul li, .nav-playlist h3, .nav-playlist a{
+    margin: 10px 0;
+}
+
+.main-nav .nav-bottom .download-app img,
+  .main-nav .nav-bottom .user-account img{
+    height: 1.2rem;
+    vertical-align: middle;
+    padding-right: 5px;
+    
+}
+
+/* .main-nav .nav-bottom hr{
+    flex-direction: row;
+} */
+
+.main-nav .nav-bottom *{
+    margin: 3px 0;
+}
+
+.main-nav .nav-bottom .user-account img{
+    text-align: center;
+    background-color: #6b6b6b;
+    border-radius: 50%;
 }
