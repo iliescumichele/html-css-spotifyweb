@@ -56,8 +56,23 @@ h4{
     font-weight: 700;
 }
 
+/* -------------------------------
+    MEDIA QUERYE
+*/
 
+@media (max-width: 500px){
+    .main-nav{
+        width: 50px;
+    }
 
+    .col-dx{
+        width: calc(100% - 50px);
+    }
+
+    #upgrade{
+        width: calc(100%-50px);
+    }
+}
 
 
 

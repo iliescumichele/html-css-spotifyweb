@@ -1,5 +1,5 @@
 /* Button on top for buying/upgrade to pro version*/
-.upgrade{
+#upgrade{
     position: fixed;
     height: 70px;
     width: calc(100% - 200px);
@@ -10,7 +10,7 @@
     z-index: 999;
 }
 
-.upgrade a{
+#upgrade a{
     background-color: rgba(0, 0, 0, 0);
     border: 1px solid white;
     color: white;
