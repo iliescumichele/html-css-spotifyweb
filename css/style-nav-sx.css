@@ -1,5 +1,5 @@
 .main-nav{
-    padding-left: 20px;
+    padding-left: 15px;
     background-color: #000000;
     flex-direction: column;
     justify-content: space-between;
@@ -8,7 +8,11 @@
 .main-nav .logo img {
     padding-top: 10px;
     height: 50px;
-    margin-bottom: 20px;
+    margin-bottom: 20px;   
+}
+
+.main-nav .logo #logo-xs{
+    display: none;
 }
 
 
@@ -34,7 +38,6 @@
 }
 
 .nav-playlist{
-    overflow-y: auto;
     margin-top: 25px;
 }
 
@@ -52,21 +55,26 @@
     vertical-align: middle;
 }
 
+.nav-playlist ul{
+    overflow: auto;
+    min-height: 30%;
+}
+
 .nav-playlist ul li, .nav-playlist h3, .nav-playlist a{
     margin: 10px 0;
 }
 
 .main-nav .nav-bottom .download-app img,
   .main-nav .nav-bottom .user-account img{
-    height: 1.2rem;
+    height: 1.5rem;
     vertical-align: middle;
-    padding-right: 5px;
+    margin-right: 5px;
     
 }
 
-/* .main-nav .nav-bottom hr{
-    flex-direction: row;
-} */
+.main-nav .nav-bottom .user-account h3{
+    display: inline-block;
+}
 
 .main-nav .nav-bottom *{
     margin: 3px 0;

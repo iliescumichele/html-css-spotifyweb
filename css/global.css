@@ -14,7 +14,7 @@ a{
 
 main{
     display: flex;
-    height: calc(100vh - 100px);
+    height: calc(100vh - 200px);
 }
 
 .col-dx{
@@ -33,7 +33,8 @@ footer #player{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    height: 100px;
+    align-items: center;
+    height: 80px;
     background-color: #282828;
 }
 
@@ -62,16 +63,47 @@ h4{
 
 @media (max-width: 500px){
     .main-nav{
-        width: 50px;
+        width: 70px;
     }
 
     .col-dx{
-        width: calc(100% - 50px);
+        width: calc(100% - 70px);
     }
 
     #upgrade{
-        width: calc(100%-50px);
+        width: calc(100% - 70px);
     }
+
+    /* nav-main */
+    .nav-playlist{
+        display: none;
+    }
+
+    .main-menu-btn span{
+        display: none;
+    }
+
+    .main-nav .nav-bottom span, hr{
+        display: none;
+    }
+
+    .main-nav .logo #logo-xs{
+        display: block;
+    }
+
+    .main-nav .logo #logo-xl{
+        display: none;
+    }
+    /* -------/nav-main------- */
+
+
+    /* main-col-dx */
+    .album{
+        width: calc(100% / 2);
+        max-width: 250px;
+        justify-content: center;
+    }
+    /* -------main-col-dx------- */
 }
 
 

@@ -56,21 +56,26 @@
 #recently-played .flex, 
  #custom-playlist .flex, 
   #artisti-popolari .flex{
+    justify-content: space-evenly;
+    justify-content: left;
     flex-wrap: wrap;
 }
 
 .album{
-    width: 200px;
+    width: calc(100% / 6);
+    max-width: 250px;
+    min-width: 175px;
     margin: 10px;
 }
 
 .album .cover{
-    height: 200px;
+    position: relative;
+    width: 100%;
 
 }
 
 .album .cover img{
-    height: 100%;
+    width: 100%;
 }
 
 .album-txt{
@@ -99,3 +104,21 @@
 
 /* /Main content (right side) */
 
+.album .cover img:hover{
+    cursor: pointer;
+    opacity: .5;
+}
+
+.album .cover i{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    transform: scale(3);
+    color: white;
+}
+
+
+.hover-album-play:hover{
+    display: block;
+}

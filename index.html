@@ -17,12 +17,13 @@
     <!-- Icons -->
     <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.css' integrity='sha512-E+53kXnJyuZFSz75xSmTfCpUNj3gp9Bd80TeQQMTPJTVWDRHPOpEYczGwWtsZXvaiz27cqvhdH8U+g/NMYua3A==' crossorigin='anonymous'/>
     <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.css' integrity='sha512-1hsteeq9xTM5CX6NsXiJu3Y/g+tj+IIwtZMtTisemEv3hx+S9ngaW4nryrNcPM4xGzINcKbwUJtojslX2KG+DQ==' crossorigin='anonymous'/>
+    <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.css' integrity='sha512-E+53kXnJyuZFSz75xSmTfCpUNj3gp9Bd80TeQQMTPJTVWDRHPOpEYczGwWtsZXvaiz27cqvhdH8U+g/NMYua3A==' crossorigin='anonymous'/>
     <!-- /Icons -->
 
     <title>Spotify</title>
 </head>
 <body>
-    
+
     <div id="upgrade">
         <a href="#">EFFETTUA L'UPGRADE</a>
     </div>
@@ -32,9 +33,10 @@
         <!-- side menu right -->
         <aside class="flex main-nav">
             <div class="nav-top">
-                <div class="logo">
+                <div class="logo ">
                     <a href="#">
-                        <img src="img/logo.svg" alt="">
+                        <img id="logo-xl" src="img/logo.svg" alt="">
+                        <img id="logo-xs" src="img/logo-small.svg" alt="">
                     </a>
                 </div>
 
@@ -66,7 +68,7 @@
                             <i class="fa-solid fa-square-plus"></i>
                             <span>Crea Playlist</span>
                         </a>
-                    </div> 
+                    </div>
                     <ul>
                         <li><a href="#">Nome Playlist</a></li>
                         <li><a href="#">Nome Playlist</a></li>
@@ -116,13 +118,14 @@
             </div>
             <!-- /menu top -->
 
-            
+
             <!-- recently played -->
             <section id="recently-played">
                 <h2>Recently played</h2>
                 <div class="flex">
                     <div class="album">
                         <div class="cover">
+                            <i class="fa-regular fa-circle-play"></i>
                             <img src="img/metal_lifting.jpg" alt="">
                         </div>
                         <div class="album-txt">
