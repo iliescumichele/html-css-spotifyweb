@@ -55,9 +55,14 @@
     vertical-align: middle;
 }
 
-.nav-playlist ul{
-    overflow: auto;
-    min-height: 30%;
+.container-playlist-name{
+    overflow: hidden;
+    height: 30%;
+}
+
+.nav-playlist .container-playlist-name ul{
+    overflow: hidden;
+    
 }
 
 .nav-playlist ul li, .nav-playlist h3, .nav-playlist a{

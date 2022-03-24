@@ -14,7 +14,7 @@ a{
 
 main{
     display: flex;
-    height: calc(100vh - 200px);
+    height: calc(100vh - 80px);
 }
 
 .col-dx{
@@ -87,13 +87,14 @@ h4{
         display: none;
     }
 
+    .main-nav .logo #logo-xl{
+        display: none;
+    }
+
     .main-nav .logo #logo-xs{
         display: block;
     }
 
-    .main-nav .logo #logo-xl{
-        display: none;
-    }
     /* -------/nav-main------- */
 
 
