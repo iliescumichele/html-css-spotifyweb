@@ -3,7 +3,7 @@
 }
 
 #player .player-album, #player .player-audio{
-    width: calc(100% / 2);
+    width: 25%;
     align-items: center;
 }
 
@@ -80,7 +80,8 @@
     background-color: #5a5a5a;
 }
 
-.player-album .player-album-icons i:hover{
+.player-album .player-album-icons i:hover,
+  .player-audio .player-audio-icons i:hover{
     cursor: pointer;
     color: white;
 }

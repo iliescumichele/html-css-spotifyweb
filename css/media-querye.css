@@ -1,0 +1,65 @@
+/* -------------------------------
+    MEDIA QUERYE
+*/
+
+@media(max-width: 950px){
+    .album{
+        width: calc(100% / 3.75);
+        min-width: 135px;
+        justify-content: center;
+    }
+}
+
+
+@media(max-width: 500px){
+    .main-nav{
+        width: 60px;
+    }
+
+    .col-dx{
+        width: calc(100% - 60px);
+    }
+
+    #upgrade{
+        width: calc(100% - 60px);
+    }
+
+    /* nav-main */
+    .nav-playlist{
+        display: none;
+    }
+
+    .main-menu-btn span{
+        display: none;
+    }
+
+    .main-nav .nav-bottom span, hr{
+        display: none;
+    }
+
+    .main-nav .logo #logo-xl{
+        display: none;
+    }
+
+    .main-nav .logo #logo-xs{
+        margin-left: -5px;
+        display: block;
+    }
+
+    /* -------/nav-main------- */
+
+
+    /* main-col-dx */
+    .album{
+        width: 45%;
+    }
+
+    #recently-played .flex, 
+      #custom-playlist .flex, 
+        #artisti-popolari .flex{
+          justify-content: space-evenly;
+          /* justify-content: center; */
+          flex-wrap: wrap;
+    }
+    /* -------main-col-dx------- */
+}

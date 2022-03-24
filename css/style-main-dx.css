@@ -62,8 +62,8 @@
 }
 
 .album{
+    position: relative;
     width: calc(100% / 6.75);
-    /* min-width: 175px; */
     margin: 10px;
 }
 
@@ -128,7 +128,7 @@
 }
 
 
-.album .cover:hover {
+.album .cover:hover>i{
     display: block;
     filter: brightness(1);
 }

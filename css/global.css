@@ -57,62 +57,6 @@ h4{
     font-weight: 700;
 }
 
-/* -------------------------------
-    MEDIA QUERYE
-*/
-
-@media(max-width: 990px){
-    .album{
-        width: 100% ;
-        justify-content: center;
-    }
-}
-
-
-@media(max-width: 500px){
-    .main-nav{
-        width: 60px;
-    }
-
-    .col-dx{
-        width: calc(100% - 60px);
-    }
-
-    #upgrade{
-        width: calc(100% - 60px);
-    }
-
-    /* nav-main */
-    .nav-playlist{
-        display: none;
-    }
-
-    .main-menu-btn span{
-        display: none;
-    }
-
-    .main-nav .nav-bottom span, hr{
-        display: none;
-    }
-
-    .main-nav .logo #logo-xl{
-        display: none;
-    }
-
-    .main-nav .logo #logo-xs{
-        display: block;
-    }
-
-    /* -------/nav-main------- */
-
-
-    /* main-col-dx */
-    .album{
-        width: calc(100% / 2);
-        justify-content: center;
-    }
-    /* -------main-col-dx------- */
-}
 
 
 
