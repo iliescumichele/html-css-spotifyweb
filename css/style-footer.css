@@ -3,21 +3,39 @@
 }
 
 #player .player-album, #player .player-audio{
-    height: 50px;
+    width: calc(100% / 2);
+    align-items: center;
 }
 
 #player .player-album .img-player-album img{
+    margin: 0 7px;
     height: 100%;
     width: 50px;
 }
 
+.player-album .player-album-icons i{
+    margin: 0 5px;
+}
+
+.player-controller .player-controller-icons{
+    justify-content: center;
+    margin-bottom: 15px;
+    margin-top: 5px;
+}
+
+
 .player-controller .player-controller-icons i{
     color: white;
-    transform: scale(1.5);
+    transform: scale(1.25);
     margin: 0 15px 0 15px;
 }
 
+.player-controller .player-controller-icons i:hover{
+    cursor: pointer;
+}
+
 .player-controller{
+    width: 50%;
     flex-direction: column;
 }
 
@@ -28,10 +46,41 @@
 .player-controller .player-controller-time{
     color: white;
     justify-content: center;
+    align-items: center;
     flex-direction: row;
 }
 
+.player-audio{
+    flex-direction: row-reverse;
+}
+
 .player-audio-icons, .player-album-icons{
+    align-items: center;
+    color: #5a5a5a;
+}
+
+.player-controller-time .scroll-time{
+    margin: 0 10px 0;
+    width: 100%;
+    height: 5px;
+    border-radius: 50px;
+    background-color: #5a5a5a;
+}
+
+.player-audio-icons i{
+    margin: 0 4px;
     color: white;
 }
 
+.player-audio-icons .scroll-audio{
+    margin: 0 7px;
+    width: 50%;
+    height: 5px;
+    border-radius: 50px;
+    background-color: #5a5a5a;
+}
+
+.player-album .player-album-icons i:hover{
+    cursor: pointer;
+    color: white;
+}

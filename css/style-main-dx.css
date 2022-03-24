@@ -62,9 +62,8 @@
 }
 
 .album{
-    width: calc(100% / 6);
-    max-width: 250px;
-    min-width: 175px;
+    width: calc(100% / 6.75);
+    /* min-width: 175px; */
     margin: 10px;
 }
 
@@ -104,21 +103,32 @@
 
 /* /Main content (right side) */
 
-.album .cover img:hover{
-    cursor: pointer;
-    opacity: .5;
+#upgrade a:hover{
+    transform: scale(1.05);
 }
 
-.album .cover i{
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    transform: scale(3);
+.menu-top nav ul li a:hover,
+    .main-nav a:hover{
     color: white;
 }
 
 
-.hover-album-play:hover{
+.album img:hover{
+    cursor: pointer;
+    filter: brightness(.5);
+}
+
+.album .cover i{
+    display: none;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(3);
+    color: white;
+}
+
+
+.album .cover:hover {
     display: block;
+    filter: brightness(1);
 }

@@ -61,17 +61,25 @@ h4{
     MEDIA QUERYE
 */
 
-@media (max-width: 500px){
+@media(max-width: 990px){
+    .album{
+        width: 100% ;
+        justify-content: center;
+    }
+}
+
+
+@media(max-width: 500px){
     .main-nav{
-        width: 70px;
+        width: 60px;
     }
 
     .col-dx{
-        width: calc(100% - 70px);
+        width: calc(100% - 60px);
     }
 
     #upgrade{
-        width: calc(100% - 70px);
+        width: calc(100% - 60px);
     }
 
     /* nav-main */
@@ -101,7 +109,6 @@ h4{
     /* main-col-dx */
     .album{
         width: calc(100% / 2);
-        max-width: 250px;
         justify-content: center;
     }
     /* -------main-col-dx------- */
